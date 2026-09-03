@@ -6,7 +6,9 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { CLINIC, NAV } from "@/lib/site-data";
 import { useScrollProgress } from "@/components/Reveal";
 import { cn } from "@/lib/utils";
-import logo from "@/assets/logo.webp.asset.json";
+
+// Logo path - place apollo-clinic-balasore-logo.webp in public folder
+const LOGO_URL = "/apollo-clinic-balasore-logo.webp";
 
 export function SiteHeader() {
   const [scrolled, setScrolled] = useState(false);
@@ -49,7 +51,7 @@ export function SiteHeader() {
       >
         <div className="container-x flex h-18 items-center justify-between gap-4 py-3">
           <Link to="/" className="shrink-0" aria-label={CLINIC.name}>
-            <img src={logo.url} alt={`${CLINIC.name} logo`} width={168} height={76} className="h-11 w-auto" />
+            <img src={LOGO_URL} alt={`${CLINIC.name} logo`} width={168} height={76} className="h-11 w-auto" />
           </Link>
 
           <nav className="hidden items-center gap-1 lg:flex">
@@ -58,7 +60,7 @@ export function SiteHeader() {
                 key={item.to}
                 to={item.to}
                 activeOptions={{ exact: item.to === "/" }}
-                className="text-muted-foreground hover:text-primary data-[status=active]:text-primary relative rounded-md px-3.5 py-2 text-sm font-semibold transition-colors data-[status=active]:bg-secondary"
+                className="text-muted-foreground hover:text-primary data-[status=active]:text-primary relative rounded-md px-3.5 py-2 text-sm font-semibold transition-colors data-[status=active]:b[...]
               >
                 {item.label}
               </Link>
@@ -77,7 +79,7 @@ export function SiteHeader() {
               </SheetTrigger>
               <SheetContent side="right" className="w-[86vw] max-w-sm p-0">
                 <div className="flex items-center justify-between border-b px-5 py-4">
-                  <img src={logo.url} alt="" width={140} height={64} className="h-9 w-auto" />
+                  <img src={LOGO_URL} alt="" width={140} height={64} className="h-9 w-auto" />
                   <Button variant="ghost" size="icon" onClick={() => setOpen(false)} aria-label="Close menu">
                     <X className="size-5" />
                   </Button>
