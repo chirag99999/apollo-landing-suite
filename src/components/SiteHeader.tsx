@@ -60,7 +60,7 @@ export function SiteHeader() {
                 key={item.to}
                 to={item.to}
                 activeOptions={{ exact: item.to === "/" }}
-                className="text-muted-foreground hover:text-primary data-[status=active]:text-primary relative rounded-md px-3.5 py-2 text-sm font-semibold transition-colors data-[status=active]:b[...]
+                className="text-muted-foreground hover:text-primary data-[status=active]:text-primary relative rounded-md px-3.5 py-2 text-sm font-semibold transition-colors data-[status=active]:bg-secondary"
               >
                 {item.label}
               </Link>
