@@ -13,8 +13,12 @@ export function SiteFooter() {
             <img src={LOGO_URL} alt={`${CLINIC.name} logo`} width={168} height={76} className="h-11 w-auto" />
           </div>
           <p className="mt-4 max-w-xs text-sm opacity-80">
-            A multi-speciality clinic bringing trusted Apollo standards of care to families across Balasore.
+            Expert healthcare. Advanced diagnostics. Comprehensive care under one roof in Balasore.
           </p>
+          <div className="mt-3 inline-flex items-center gap-1.5 rounded-full bg-white/10 px-3 py-1 text-xs font-medium">
+            <span className="size-1.5 rounded-full bg-emerald-400"></span>
+            NABL Accredited Laboratory
+          </div>
         </div>
 
         <div>
@@ -74,7 +78,7 @@ export function SiteFooter() {
 
       <div className="border-t border-white/15">
         <div className="container-x flex flex-col gap-2 py-5 text-xs opacity-70 sm:flex-row sm:items-center sm:justify-between">
-          <p>© {new Date().getFullYear()} {CLINIC.name}. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} {CLINIC.name}. All rights reserved. | Powered by {CLINIC.poweredBy}</p>
           <p>Franchise clinic · Not for medical emergencies — please call your nearest emergency service.</p>
         </div>
       </div>

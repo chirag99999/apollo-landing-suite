@@ -1,479 +1,248 @@
-﻿# Apollo Clinic Balasore — Website Content Doc
+# Apollo Clinic Balasore — Master Website Content Doc
 
-> **How to use this file:**
-> Edit any value below, then tell me *"update the site from CONTENT.md"* and I will apply every change automatically.
-> Do NOT change section headings (lines starting with ## or ###) — those are markers I use to find content.
+> **Document Origin:** Synced directly from `Apollo_Clinic_Balasore_Master_Website_Content.docx`.
+> **How to use this file:** Edit any detail below, then tell me *"update the site from CONTENT.md"* and all changes will be applied and deployed.
+> **Powered by:** Manorama Communication
 
 ---
 
-## 🏥 Clinic Info
+## 🏥 Clinic Master Info
 
 ```
-Name:       Apollo Clinic Balasore
-Tagline:    Expertise. Closer to you.
-Phone:      +91 90909 09090
-WhatsApp:   https://wa.me/919090909090
-Email:      balasore@apolloclinic.in
-Address:    Sahadevkhunta, F.M. Golei, Balasore, Odisha 756001
-Map Query:  Balasore, Odisha 756001
+Name:          Apollo Clinic Balasore
+Tagline:       Expert Care. Advanced Diagnostics. All Under One Roof.
+Phone:         +91-9439454650
+Phone Href:    tel:+919439454650
+WhatsApp:      https://wa.me/919439454650
+Email:         info@apolloclinicbalasore.com
+Address:       2nd Floor, Sanjay Heights, Balasore, Odisha
+Map Location:  Sanjay Heights, Balasore, Odisha
+Accreditation: NABL Accredited Laboratory
+Powered By:    Manorama Communication
 ```
 
-### Clinic Hours
+### Operating Hours
 
-| Day / Section           | Timing                  |
-|-------------------------|-------------------------|
-| Monday - Saturday       | 8:00 AM - 8:30 PM       |
-| Sunday                  | 9:00 AM - 2:00 PM       |
-| Diagnostics & Pharmacy  | Open all days           |
+| Section                   | Timings                              |
+|---------------------------|--------------------------------------|
+| Monday – Sunday           | 9:00 AM – 8:00 PM                    |
+| NABL Laboratory           | Open all days (9:00 AM – 8:00 PM)    |
+| Pharmacy & Home Pickup    | Open all 7 days                      |
 
 ---
 
 ## 🏠 Home Page
 
-### Hero Badge
-```
-Now open in Sahadevkhunta, Balasore
-```
+### Hero Section
+- **Badges:** `NABL Accredited Lab` • `2nd Floor, Sanjay Heights, Balasore`
+- **Headline:** `Expert Care. Advanced Diagnostics. All Under One Roof.`
+- **Subtext:** `Apollo Clinic Balasore brings together specialist consultations, advanced diagnostics, preventive health check-ups and essential healthcare services to support the health and well-being of you and your family.`
+- **Primary CTA:** Book an Appointment (`/contact`)
+- **Secondary CTA:** Find a Doctor (`/doctors`)
+- **Call CTA:** Call +91-9439454650 (`tel:+919439454650`)
+- **Trust Elements:**
+  - `Mon – Sun: 9:00 AM – 8:00 PM`
+  - `Walk-ins welcome`
+  - `Reports on WhatsApp`
+- **Floating Badge:** `NABL Accredited Lab` — `Reports within 6–8 hours on WhatsApp`
 
-### Hero Headline
-```
-Complete family healthcare, closer to you.
-```
+### Patient Intent ("How Can We Help You Today?")
+1. **Find a Doctor:** Connect with 50+ specialists across 26+ medical disciplines. (`/doctors`)
+2. **Book a Diagnostic Test:** Access NABL accredited pathology, CT Scan, ultrasound, 2D Echo & X-Ray. (`/services`)
+3. **Explore Health Packages:** Preventive screening packages starting from ₹1,400 with physician review. (`/health-checkups`)
+4. **Our Clinical Services:** Explore consultations, dentistry, diabetes care, physiotherapy & pharmacy. (`/services`)
 
-### Hero Subtext
-```
-Specialist consultations, accurate diagnostics, preventive health checks and a full pharmacy —
-delivered with the clinical discipline Apollo is known for.
-```
+### The Apollo Advantage ("Why Apollo Clinic Balasore?")
+1. **NABL Accredited Lab:** High-precision laboratory testing with automated analysers and strict quality control.
+2. **50+ Specialists:** Consultations across cardiology, neurology, gastroenterology, gynaecology, ortho & more.
+3. **Advanced Diagnostics:** CT Scan, high-resolution ultrasound, digital X-Ray, 2D Echo, TMT, EEG and endoscopy.
+4. **Home Sample Pickup:** Free sample pickup across Balasore town for preventive health checkup packages.
 
-### Hero Floating Card (bottom-left of image)
-```
-Title:    Reports in 6–8 hours
-Subtitle: For most routine lab tests
-```
-
-### Hero Trust Badges (small ticks below buttons)
-```
-- Walk-ins welcome
-- Reports on WhatsApp
-- Cards & UPI accepted
-```
-
----
-
-### Highlights Strip (4 cards below hero)
-
-| Icon         | Title               | Text                                                              |
-|--------------|---------------------|-------------------------------------------------------------------|
-| Stethoscope  | 25+ specialists     | Consultations across nine specialities, six days a week.          |
-| FlaskConical | Trusted diagnostics | Pathology, digital X-ray and ultrasound with fast reporting.      |
-| Truck        | Home collection     | Free sample pickup across Balasore for health packages.           |
-| ShieldCheck  | Apollo standards    | Protocol-driven care, sterilised rooms, transparent pricing.      |
+### Advanced Diagnostics
+- CT Scan (Whole Body)
+- Ultrasound (USG Abdomen / Pelvis)
+- Digital X-Ray
+- Mammography (Both Breasts)
+- 2D Echocardiography
+- Treadmill Test (TMT)
+- Pulmonary Function Test (PFT)
+- ECG (Electrocardiogram)
+- EEG & EMG
+- NCS & NCV (Nerve Conduction Studies)
+- Upper GI Endoscopy & Colonoscopy
 
 ---
 
-### Services Section
+## 🩺 Clinical Services & Diagnostic Divisions
 
-```
-Section Label:    Specialities
-Section Heading:  Care for every stage of life
-Section Subtext:  Nine specialities, one clinic. Consult, test and collect your medicines without a second trip.
-```
-
----
-
-### Stats Band (4 numbers)
-
-| Value   | Label                    |
-|---------|--------------------------|
-| 25+     | Specialists on panel     |
-| 60k+    | Patients cared for       |
-| 1,200+  | Diagnostic tests         |
-| 4.8★    | Average patient rating   |
+1. **Specialist Consultations:** Consultations across 26+ medical specialties with visiting and resident doctors.
+2. **NABL Accredited Laboratory:** Comprehensive clinical biochemistry, haematology, pathology and culture tests with accurate reporting.
+3. **Imaging & Radiology:** Whole-body imaging including CT scan, high-resolution ultrasound, and low-radiation digital X-ray.
+4. **Cardiac Diagnostics:** Advanced non-invasive cardiac evaluation supervised by expert cardiologists (2D Echo, TMT, Holter, ECG).
+5. **Neurological & Pulmonary Tests:** Specialized neuro-electrophysiology and respiratory diagnostic evaluations (EEG, EMG, NCS/NCV, PFT).
+6. **Preventive Health Packages:** Customized health screening profiles designed for different age groups, lifestyles, and risk factors.
+7. **Specialized Diagnostics:** Endoscopy, Colonoscopy, Fundoscopy / Retina screening, Podia Scan, VPT, ABI & Uroflowmetry.
+8. **Dental Care:** Preventive, restorative, and cosmetic dentistry in a fully sterilized operatory.
+9. **Physiotherapy & Rehab:** Targeted physical therapy for joint, spine, sports injuries, and post-surgical rehabilitation.
+10. **Diabetes Care:** Comprehensive assessment, HbA1c testing, diabetic foot screening, and diet management.
+11. **Audiology & Speech:** Professional hearing evaluations, audiograms, and speech-language therapy.
+12. **Home Sample Collection:** Hassle-free blood and pathology sample collection across Balasore town.
 
 ---
 
-### Diagnostics Section
+## 👨‍⚕️ Verified Doctor Roster (50+ Specialists)
 
-```
-Section Label:   Diagnostics
-Heading:         Precise results you can act on
-Subtext:         Our in-house laboratory runs automated analysers with double-verified reporting, backed by digital
-                 X-ray and ultrasound. Reports reach you on WhatsApp and email the same day.
-```
+### Cardiology
+- **Dr. Gobinda Prasad Nayak** | MBBS, MD, DM (Cardiology) | 1st & 3rd Tuesday
+- **Dr. Sushanta Kumar Pradhan** | MBBS, MD, DM (Cardiology) | 1st Thursday
+- **Dr. Sanat Kumar Sahoo** | MBBS, MD, DM (Cardiology) | 2nd Thursday
+- **Dr. Bikram Keshari Mohapatra** | MBBS, MD, DM (Cardiology) | 2nd Saturday
+- **Dr. Ranjan Kumar Mohanty** | MBBS, MD, DM (Cardiology) | 2nd & 4th Sunday
+- **Dr. Jhulana Kumar Jena** | MBBS, MS, MCH (CTVS) | 3rd Thursday
+- **Dr. Priyabrata Sahu** | MBBS, MD, DM (Cardiology) | 3rd Saturday
+- **Dr. Jyotirmaya Sahoo** | MBBS, MD, DM (Cardiology) | 3rd Sunday
+- **Dr. Y. J. Reddy** | MBBS, MD | 4th Sunday, 5:00 PM – 7:00 PM
+- **Dr. Soumya Shree Sagar Nayak** | MBBS, MD, DM (Cardiology) | 1st Sunday
 
-#### Diagnostics Bullet Points
-```
-- 1,200+ tests including specialised profiles
-- Free home sample collection with packages
-- Radiology reported by qualified consultants
-- Digital reports archived for easy follow-up
-```
+### Paediatric Cardiology
+- **Dr. Sandeep Mohanty** | MBBS, MD, DM | 2nd Saturday, 10:00 AM – 12:00 PM
 
----
+### General Physician
+- **Dr. Motirmoy Giri** | MBBS, MD, FICM, PGDGM | Every Sunday, 1:00 PM – 2:00 PM
+- **Dr. Rajeeb Ku. Behera** | MBBS, MD | Monday to Friday, 8:00 AM – 10:00 AM
+- **Dr. Siddhartha Shankar Acharya** | MBBS, DNB | Thursday – Saturday, 11:00 AM – 12:00 PM
+- **Dr. Ommkar Mohapatra** | MBBS, MD | Every Day, 5:00 PM – 7:00 PM
 
-### Packages Section
+### Gynecology & Obstetrics
+- **Prof. Dr. Babita Panda** | MBBS, MD, MF | 4th Saturday, 9:00 AM – 1:00 PM
+- **Dr. Pankajini Behera** | MBBS, MS | Every Day, 6:00 PM
+- **Dr. Suman Sourav Patra** | MBBS, MS | Every Day, 9:00 AM
+- **Dr. Satyananda Dagar** | MBBS, MS | Every Day, 9:00 AM
+- **Dr. Sagar Parida** | MBBS, MS | Every Day, 9:00 AM
 
-```
-Section Label:   Preventive care
-Heading:         Health check packages
-Subtext:         Curated panels for every age group, priced transparently with a physician review included.
-```
+### Gastroenterology & Hepatology
+- **Dr. Sarojkanta Sahu** | MBBS, MD, DM | 1st Sunday, 10:00 AM – 12:00 PM
+- **Dr. Dibyalochan Praharaj** | MBBS, MD, DM | 2nd Tuesday, 8:00 AM – 10:00 AM
+- **Dr. Dilip Mohanty** | MBBS, MD, DM | 3rd Sunday, 12:00 PM – 2:00 PM
+- **Dr. Sambit Kumar Bhuyan** | MBBS, MD, DM | 4th Sunday, 9:00 AM – 1:00 PM
+- **Dr. Jayant Kumar Sahu** | MBBS, MS | Monday to Friday, 10:00 AM – 12:00 PM
 
----
+### Neuro Medicine
+- **Dr. Ajit Prasad Mishra** | MBBS, MD, DM (Neurology) | 1st Saturday, 10:00 AM – 1:00 PM
+- **Dr. Shuhankar Mishra** | MBBS, MD, DM (Neurology) | 1st & 3rd Sunday, 1:00 PM – 5:00 PM
+- **Dr. Gurupada Das** | MBBS, MD, DM (Neurology) | 2nd Sunday, 11:00 AM – 2:00 PM
+- **Dr. Srikanta Ku. Sahoo** | MBBS, MD, DM (Neurology) | 3rd Saturday, 6:00 PM – 8:00 PM
+- **Dr. Shibani Rath** | MBBS, MD, DM (Neurology) | 3rd Saturday, 12:00 PM – 3:00 PM
+- **Dr. H.N. Praharaj** | MBBS, MD, DM (Neurology) | 4th Sunday, 10:00 AM – 1:00 PM
 
-### Doctors Section
+### Neuro Surgery
+- **Dr. Amit Kumar Chanduka** | MBBS, MS, MCH | 2nd Friday, 3:00 PM – 5:00 PM
+- **Dr. Atmaranjan Dash** | MBBS, MS, MCH | 2nd Sunday
+- **Dr. Ritesh Kumar Bhoot** | MBBS, MS, MCH | 2nd Monday, 3:00 PM – 4:00 PM
+- **Dr. Deepak Parida** | MBBS, MS, MCH | 4th Friday, 11:00 AM – 1:00 PM
+- **Dr. Bikash Ranjan Behera** | MBBS, MS, MCH | Last Monday of Month, 1:00 PM – 3:00 PM
+- **Dr. Manoj Majhi** | MBBS, DRNB | 3rd Friday, 2:00 PM – 4:00 PM
 
-```
-Section Label:   Our panel
-Heading:         Doctors you can rely on
-```
+### Orthopedic
+- **Dr. Radhakanta Pradhan** | MBBS, MS | Every Day
+- **Dr. Vaibhav Mohanty** | MBBS, MS | Every Friday, 11:00 AM – 2:00 PM
+- **Dr. Gokul Ch. Chand** | MBBS, MS | Every Day, 11:00 AM – 12:00 PM
+- **Dr. Pradeep Ku. Sahoo** | MBBS, MS | 4th Sunday, 11:00 AM – 3:00 PM
 
----
+### Urology
+- **Dr. Pratik Sahoo** | MBBS, MD, DNB (Urology) | 1st Sunday, 10:00 AM – 1:00 PM
+- **Dr. Sumanta Mishra** | MBBS, MS, MCH, DNB | 2nd Sunday, 11:00 AM – 1:00 PM
+- **Dr. Pranab Ku. Pattnaik** | MBBS, MS, NICH | 4th Saturday, 9:00 AM – 10:00 AM
+- **Dr. Aditya Prasad Padhy** | MBBS, MS, MCH | 3rd Sunday, 10:00 AM – 11:00 AM
 
-### Testimonials Section
+### Nephrology
+- **Dr. Alok Mohapatra** | MBBS, MD, DM | 1st Sunday, 4:00 PM – 7:00 PM
+- **Dr. Bibekananda Panda** | MBBS, MD, DNB | 2nd Sunday, 10:00 AM – 3:00 PM
+- **Dr. Judhajit Maity** | MBBS, MD, DM | 4th Sunday, 10:00 AM – 12:00 PM
+- **Dr. Ranjan Ku. Sahoo** | MD, DM | 3rd Sunday, 8:00 AM – 10:00 AM
 
-```
-Section Label:   Patient voices
-Heading:         Trusted by families in Balasore
-```
+### Oncology
+- **Dr. Ranjit Kar** | MBBS, MD, DNB, PDCR | 2nd & 3rd Saturday, 7:00 AM – 11:00 AM
+- **Dr. Ipsit Ilahi Das** | MS, M.CH | 1st Sunday, 7:00 AM – 8:00 AM
+- **Dr. Mahesh Mohanty** | MS, DRNB | 4th Sunday, 2:00 PM – 3:00 PM
+- **Dr. Aditya Mishra** | Medical Oncology | 4th Friday, 11:00 AM – 12:00 PM
 
----
+### ENT
+- **Dr. Rohit Agarwal** | MBBS, MS | 1st & 3rd Sunday, 5:00 PM – 6:00 PM
+- **Dr. Anil Kumar Dash** | MBBS, MS | Mon, Tue, Wed, 8:00 AM – 9:00 AM
+- **Dr. Asutosh Dash** | MBBS, MS | 2nd & 4th Tuesday
 
-### FAQ Section
+### Endocrinology
+- **Dr. Dhiroj Kumar Panda** | MBBS, MD | 3rd Friday, 3:00 PM – 5:00 PM
+- **Dr. Bhabani Shankar Dhal** | MBBS, MD | 4th Sunday, 1:00 PM – 2:00 PM
 
-```
-Section Label:   Good to know
-Heading:         Frequently asked
-Subtext:         Still unsure about something? Call the front desk — we answer between 8:00 AM and 8:30 PM.
-```
+### Dermatology
+- **Dr. P.C. Singh** | MBBS, MD | 1st & 3rd Saturday, 5:00 PM – 7:00 PM
 
----
+### Dental Care
+- **Dr. Supriya Das** | B.D.S. | Every Day
+- **Dr. Prerna Muskara** | B.D.S., M.D.S. | Call for availability
 
-### CTA Banner (bottom of home page)
+### General & Laparoscopic Surgery
+- **Dr. Tanmay Panda** | MBBS, MS | 2nd Sunday, 11:00 AM – 12:00 PM
+- **Dr. Rama Krushna Sahoo** | MBBS, MS | Every Day, 11:00 AM – 3:00 PM
+- **Dr. Akshya Kumar Panda** | MBBS, MS, FALS-H, FIAGES | Every Day, 11:00 AM – 3:00 PM
 
-```
-Heading:  Ready when you are.
-Subtext:  Book a consultation, schedule a health check, or ask us anything about your reports.
-Button 1: Book appointment
-Button 2: WhatsApp us
-```
+### Pulmonary
+- **Dr. Utpal Kumar Nandy** | MBBS, MD, FCCS | 2nd Wednesday, 11:00 AM – 1:00 PM
 
----
+### Rheumatology
+- **Dr. Debashish Maikap** | MBBS, MD | 3rd Sunday, 9:00 AM – 1:00 PM
 
-## 🩺 Services
+### Psychiatry & Psychology
+- **Dr. Bijay Kumar Prusty** | MD (Psychiatry) | 3rd Saturday, 11:00 AM – 12:00 PM
+- **Dr. Snehanshu Dey** | MBBS, MD, DM | 1st Sunday, 1:00 PM – 2:00 PM
+- **Dr. Nibedita Mohanty** | MD (Clinical Psychology) | 2nd Monday, 9:00 AM – 2:00 PM
 
-### Service 1 — General Medicine
-```
-Title:   General Medicine
-Summary: Everyday care for fever, infections, diabetes, hypertension and lifestyle disorders.
-Points:
-  - Same-day consultations
-  - Chronic disease management
-  - Vaccination advice
-```
+### Ophthalmology
+- **Dr. Sanghamitra Das** | MBBS, MS | 2nd Thursday, 11:00 AM – 2:00 PM
 
-### Service 2 — Cardiology
-```
-Title:   Cardiology
-Summary: Heart screening, ECG, 2D Echo and TMT reviewed by visiting cardiologists.
-Points:
-  - ECG & 2D Echo
-  - Treadmill test (TMT)
-  - Post-angioplasty follow-up
-```
+### Hematology
+- **Dr. Pritish Chandra Patra** | MBBS, MD, DM, PDCC | 4th Thursday, 10:00 AM – 12:00 PM
 
-### Service 3 — Paediatrics
-```
-Title:   Paediatrics
-Summary: Newborn to adolescent care with a complete national immunisation schedule.
-Points:
-  - Growth monitoring
-  - Immunisation
-  - Child nutrition counselling
-```
+### Audiology
+- **Dr. Debajit Ankit Barik** | ASLP(PG), Audiologist & Speech Pathologist | Every day
 
-### Service 4 — Obstetrics & Gynaecology
-```
-Title:   Obstetrics & Gynaecology
-Summary: Antenatal care, fertility guidance and women apos wellness under one roof.
-Points:
-  - Antenatal packages
-  - PCOS & menopause care
-  - Obstetric ultrasound
-```
+### Radiology & Pathology
+- **Dr. Bibekanada Nayak** | MBBS, MD (Radiology) | Monday – Saturday, 11:00 AM – 3:00 PM
+- **Dr. Himadri Sekhar Paul** | MBBS, MD (Pathology) | Every Day
+- **Dr. Manisha Parida** | MBBS, MD (Pathology) | Every Day
 
-### Service 5 — Orthopaedics
-```
-Title:   Orthopaedics
-Summary: Joint, spine and sports injury care with in-house physiotherapy support.
-Points:
-  - Fracture & injury care
-  - Arthritis management
-  - Physiotherapy
-```
-
-### Service 6 — Dermatology
-```
-Title:   Dermatology
-Summary: Medical and cosmetic skin, hair and nail treatments by qualified dermatologists.
-Points:
-  - Acne & pigmentation
-  - Hair fall treatment
-  - Minor skin procedures
-```
-
-### Service 7 — Dental Care
-```
-Title:   Dental Care
-Summary: Preventive and restorative dentistry in a fully sterilised operatory.
-Points:
-  - Scaling & polishing
-  - Root canal & crowns
-  - Kids dental care
-```
-
-### Service 8 — Diagnostics & Pathology
-```
-Title:   Diagnostics & Pathology
-Summary: NABL-standard pathology, digital X-ray and ultrasound with fast reporting.
-Points:
-  - Blood & urine profiles
-  - Digital X-ray & USG
-  - Home sample collection
-```
-
-### Service 9 — Pharmacy
-```
-Title:   Pharmacy
-Summary: Genuine medicines and wellness essentials available every day of the week.
-Points:
-  - Authentic branded medicines
-  - Chronic refill reminders
-  - Open all days
-```
+### Physiotherapy
+- **Dr. Ipsita Pradhan** | BPT, MPT | Every Day
+- **Dr. Sanghamitra Pradhan** | BPT, MPT | Every Day
 
 ---
 
-## 👨‍⚕️ Doctors
+## 💊 Preventive Health Packages
 
-### Doctor 1
-```
-Name:          Dr. Subrat Mohanty
-Speciality:    General Medicine
-Qualification: MBBS, MD (Internal Medicine)
-Experience:    16 years
-Schedule:      Mon - Sat · 9:00 AM - 1:00 PM
-Initials:      SM
-```
+1. **General Health Check (₹1,400):** CBC, ESR, Glucose Fasting & PPBS, Cholesterol, Blood Grouping & Rh Typing, ECG, Chest X-Ray (Film with Report), Physician Consultation, Dental Consultation.
+2. **Fever Profile (₹1,500):** CBC, Malaria Parasite (MP), Widal Test, Dengue Test (NS1, IgG, IgM), CRP, Urine Routine, Physician Consultation.
+3. **Health Check at Home (₹2,150):** CBC, ESR, Fasting Glucose, HbA1c, Lipid Profile, LFT, KFT, Urine R/E, Thyroid Profile (T3, T4, TSH).
+4. **Senior Citizen Health Check (₹2,500):** CBC, Glucose Fasting & PPBS, Cholesterol, LFT, KFT, PSA (Men) / PAP Smear (Women), Physician Consultation, Dental Consultation.
+5. **Pre Marriage Profile (₹3,100):** CBC, Hemoglobin Electrophoresis (HPLC), Fasting Glucose, Blood Grouping & Rh Type, HbA1c, TSH, Serology (HIV, HBsAg, HCV, VDRL), Gynaecologist / Physician Consultation, Dental Consultation.
+6. **Nephro Profile (₹3,200):** CBC, Glucose Fasting & PPBS, HbA1c, KFT, Serum Calcium & Phosphorus, Urine Routine, Ultrasound Whole Abdomen, Nephrology clinical review.
+7. **Exclusive Health Check (₹3,900):** CBC & ESR, Lipid Profile & Cholesterol, HbA1c, LFT & KFT, Thyroid Profile, TMT, ECG, Chest X-Ray, Ultrasound Whole Abdomen.
+8. **PCOD Profile (₹4,500):** LH / FSH Ratio, Prolactin, TSH, Testosterone Total, Beta hCG, Estradiol (E2), Fasting Blood Sugar, AMH.
+9. **Well Women Health Check (₹4,500):** CBC & ESR, Blood Grouping & Rh Type, Fasting Glucose, USG Whole Abdomen, Mammography Both Breasts, Iron Profile, Urine Routine, Thyroid Profile, PAP Smear, Gynaecologist Consultation.
+10. **Master Health Check (₹5,900 - Recommended):** CBC, Fasting Glucose & PPBS, HbA1c, Blood Grouping, Lipid Profile, LFT, KFT, Vitamin D3, Vitamin B12, Thyroid Profile, Urine & Stool Routine, Chest X-Ray, ECG, USG Whole Abdomen, Physician & Dental Consultations.
+11. **Heart Check (₹7,200):** Complete Master Health Check Panel, Troponin-T, 2D Echocardiography, TMT, Cardiologist Consultation, Dental Consultation.
+12. **Whole Body Health Check (₹7,600):** Complete Master Health Check Panel, Serum Calcium & Phosphorus, Serology (HIV, HBsAg, HCV), 2D Echocardiography / TMT, USG Whole Abdomen & Chest X-Ray, Specialist Physician Consultation.
 
-### Doctor 2
-```
-Name:          Dr. Ipsita Panda
-Speciality:    Obstetrics & Gynaecology
-Qualification: MBBS, MS (OBG)
-Experience:    12 years
-Schedule:      Mon, Wed, Fri · 10:00 AM - 3:00 PM
-Initials:      IP
-```
-
-### Doctor 3
-```
-Name:          Dr. Ranjan Kumar Das
-Speciality:    Cardiology
-Qualification: MBBS, MD, DM (Cardiology)
-Experience:    18 years
-Schedule:      Sat · 11:00 AM - 4:00 PM
-Initials:      RD
-```
-
-### Doctor 4
-```
-Name:          Dr. Anwesha Sahoo
-Speciality:    Paediatrics
-Qualification: MBBS, MD (Paediatrics)
-Experience:    10 years
-Schedule:      Mon - Sat · 5:00 PM - 8:00 PM
-Initials:      AS
-```
-
-### Doctor 5
-```
-Name:          Dr. Manoj Behera
-Speciality:    Orthopaedics
-Qualification: MBBS, MS (Ortho)
-Experience:    14 years
-Schedule:      Tue, Thu, Sat · 4:00 PM - 7:00 PM
-Initials:      MB
-```
-
-### Doctor 6
-```
-Name:          Dr. Priyanka Rout
-Speciality:    Dermatology
-Qualification: MBBS, MD (Dermatology)
-Experience:    9 years
-Schedule:      Mon, Thu · 11:00 AM - 3:00 PM
-Initials:      PR
-```
-
----
-
-## 💊 Health Check Packages
-
-### Package 1 — Essential Health Check
-```
-Name:       Essential Health Check
-Price:      ₹1,199
-Was:        ₹1,800
-Tests:      42 tests
-For:        Adults 20+ · annual baseline
-Featured:   No
-Includes:
-  - Complete blood count
-  - Blood sugar (F & PP)
-  - Lipid profile
-  - Liver & kidney panel
-  - Urine routine
-  - Physician consultation
-```
-
-### Package 2 — Comprehensive Full Body  ⭐ FEATURED
-```
-Name:       Comprehensive Full Body
-Price:      ₹2,999
-Was:        ₹4,500
-Tests:      78 tests
-For:        Adults 35+ · complete screening
-Featured:   Yes
-Includes:
-  - Everything in Essential
-  - Thyroid profile (T3, T4, TSH)
-  - HbA1c & Vitamin D, B12
-  - ECG + Chest X-ray
-  - Ultrasound whole abdomen
-  - Physician & diet consultation
-```
-
-### Package 3 — Womens Wellness
-```
-Name:       Women's Wellness
-Price:      ₹2,499
-Was:        ₹3,600
-Tests:      64 tests
-For:        Women 25+ · hormonal & bone health
-Featured:   No
-Includes:
-  - CBC, thyroid & iron studies
-  - Vitamin D & calcium
-  - PAP smear
-  - Pelvic ultrasound
-  - Gynaecologist consultation
-```
-
-### Package 4 — Cardiac Care Screen
-```
-Name:       Cardiac Care Screen
-Price:      ₹3,499
-Was:        ₹5,000
-Tests:      56 tests
-For:        Heart risk & family history
-Featured:   No
-Includes:
-  - Lipid profile & hsCRP
-  - ECG, 2D Echo
-  - Treadmill test (TMT)
-  - Kidney function
-  - Cardiologist review
-```
-
-### Package 5 — Diabetes Care Plan
-```
-Name:       Diabetes Care Plan
-Price:      ₹1,699
-Was:        ₹2,400
-Tests:      48 tests
-For:        Diabetics & pre-diabetics
-Featured:   No
-Includes:
-  - HbA1c, FBS & PPBS
-  - Kidney profile & microalbumin
-  - Lipid profile
-  - Eye & foot screening advice
-  - Diet counselling
-```
-
-### Package 6 — Senior Citizen Care
-```
-Name:       Senior Citizen Care
-Price:      ₹3,199
-Was:        ₹4,800
-Tests:      82 tests
-For:        60+ years · complete review
-Featured:   No
-Includes:
-  - Full body profile
-  - Bone health & Vitamin D
-  - ECG + Chest X-ray
-  - PSA (men) / thyroid (women)
-  - Physician consultation
-```
-
----
-
-## ⭐ Testimonials
-
-### Testimonial 1
-```
-Quote: Booked a full body check for my parents. Reports came the same evening on WhatsApp and the physician explained everything patiently.
-Name:  Sasmita Jena
-From:  Sahadevkhunta, Balasore
-```
-
-### Testimonial 2
-```
-Quote: The paediatrician is wonderful with children. Clean, calm and never a long wait — exactly what a clinic should feel like.
-Name:  Rakesh Mohapatra
-From:  Remuna, Balasore
-```
-
-### Testimonial 3
-```
-Quote: Apollo standards without travelling to Bhubaneswar. The cardiac screening package was thorough and fairly priced.
-Name:  Dr. A. Pattnaik
-From:  Retired professor
-```
-
----
-
-## ❓ FAQs
-
-### FAQ 1
-```
-Q: Do I need an appointment to visit?
-A: Walk-ins are welcome for general medicine and diagnostics. For specialists we recommend booking a slot by phone or WhatsApp so you are seen without waiting.
-```
-
-### FAQ 2
-```
-Q: How quickly are lab reports delivered?
-A: Most routine pathology reports are ready within 6-8 hours and are shared on WhatsApp and email. Specialised tests may take 24-48 hours.
-```
-
-### FAQ 3
-```
-Q: Do you offer home sample collection?
-A: Yes. Home collection is available across Balasore town for all pathology tests and health check packages, at no extra charge for packages.
-```
-
-### FAQ 4
-```
-Q: Are cashless or insurance payments accepted?
-A: We accept all major cards, UPI and corporate health tie-ups. Please carry your policy or corporate ID for reimbursement paperwork.
-```
-
-### FAQ 5
-```
-Q: Is the clinic accessible for elderly patients?
-A: The clinic is on an accessible floor with wheelchair support, priority seating and assistance staff for senior citizens.
-```
+### Apollo ProHealth Specialty Packages
+- Apollo Pro Health Lite — ₹4,499
+- Apollo Pro Health Smart Check — ₹4,999
+- Apollo Pro Health Check — ₹7,199
+- General ProHealth Women Master Wellness — ₹9,899
+- Apollo ProHealth Senior Citizen Male — ₹9,899
+- Apollo Sugar ProHealth Diabetic Care — ₹9,999
+- Apollo ProHealth Comprehensive — ₹10,499
+- Apollo ProHealth Women Comprehensive Wellness — ₹10,499
+- Apollo ProHealth Cancer Screening Male — ₹10,499
+- Apollo ProHealth Cancer Screening Female — ₹10,499
+- Apollo ProHealth Senior Citizen Female — ₹10,699

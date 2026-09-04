@@ -1,7 +1,8 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { Award, HandHeart, ShieldCheck, Sparkles } from "lucide-react";
+import { Award, CheckCircle2, HeartPulse, MapPin, Phone, ShieldCheck, Stethoscope, TestTubes } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
 import { PageHero } from "@/components/PageHero";
 import { Reveal } from "@/components/Reveal";
 import { CLINIC, STATS } from "@/lib/site-data";
@@ -14,55 +15,91 @@ export const Route = createFileRoute("/about")({
       {
         name: "description",
         content:
-          "Learn about Apollo Clinic Balasore: our clinical philosophy, facilities, quality standards and the team caring for Balasore families.",
+          "Apollo Clinic Balasore is your trusted NABL accredited healthcare partner at 2nd Floor, Sanjay Heights, Balasore. Specialist consultations, NABL diagnostics, imaging and comprehensive family healthcare under one roof.",
       },
       { property: "og:title", content: "About Apollo Clinic Balasore" },
       {
         property: "og:description",
-        content: "Our clinical philosophy, facilities and quality standards in Balasore.",
+        content:
+          "NABL accredited laboratory, 50+ specialist consultants, and modern diagnostics at Sanjay Heights, Balasore.",
       },
     ],
   }),
   component: AboutPage,
 });
 
-const VALUES = [
-  { icon: ShieldCheck, title: "Clinical integrity", text: "Evidence-based protocols, no unnecessary tests, transparent pricing on every bill." },
-  { icon: HandHeart, title: "Patient first", text: "Unhurried consultations, clear explanations and follow-up that actually happens." },
-  { icon: Award, title: "Quality assured", text: "Calibrated equipment, internal quality controls and periodic clinical audits." },
-  { icon: Sparkles, title: "Comfort & hygiene", text: "Sterilised procedure rooms, clean waiting areas and short waiting times." },
+const PILLARS = [
+  {
+    icon: ShieldCheck,
+    title: "Comprehensive Care",
+    text: "Multiple healthcare services under one roof: consultations, laboratory, radiology, dental and pharmacy.",
+  },
+  {
+    icon: MapPin,
+    title: "Accessible & Convenient",
+    text: "Centrally located at 2nd Floor, Sanjay Heights, Balasore — open Monday to Sunday, 9:00 AM to 8:00 PM.",
+  },
+  {
+    icon: Stethoscope,
+    title: "Specialist-Led Medicine",
+    text: "Consultations across 26+ medical specialties with visiting and resident medical consultants.",
+  },
+  {
+    icon: Award,
+    title: "NABL Accredited Diagnostics",
+    text: "Certified laboratory analysers, strict internal quality controls, and rapid digital report delivery.",
+  },
 ];
 
 function AboutPage() {
   return (
     <>
       <PageHero
-        eyebrow="About us"
-        title="Apollo standards of care, built for Balasore"
-        description="We opened with a simple intent: families in Balasore should not have to travel to a metro for reliable specialist opinion and dependable diagnostics."
-      />
+        eyebrow="About Us"
+        title="Your Healthcare Partner in Balasore"
+        description="Apollo Clinic Balasore provides specialist consultations, diagnostics, health checks and supporting healthcare services from its location at 2nd Floor, Sanjay Heights, Balasore."
+      >
+        <div className="flex flex-wrap gap-3 mt-4">
+          <Button asChild size="lg" variant="secondary">
+            <Link to="/contact">Book an appointment</Link>
+          </Button>
+          <Button asChild size="lg" variant="outline" className="border-white/40 bg-transparent text-white hover:bg-white/10">
+            <a href={CLINIC.phoneHref}>
+              <Phone className="size-4 mr-2" /> Call: {CLINIC.phone}
+            </a>
+          </Button>
+        </div>
+      </PageHero>
 
+      {/* Main Philosophy Section */}
       <section className="section">
         <div className="container-x grid items-center gap-12 lg:grid-cols-2">
           <Reveal>
-            <h2 className="text-3xl font-bold lg:text-4xl">A neighbourhood clinic with hospital discipline</h2>
-            <p className="mt-5 text-muted-foreground">
-              {CLINIC.name} brings consultations, pathology, radiology and pharmacy into a single visit. Every
-              service follows documented Apollo protocols — from how a sample is labelled to how a report is
-              verified before it reaches you.
+            <Badge className="bg-primary text-primary-foreground mb-3">NABL Accredited Healthcare Partner</Badge>
+            <h2 className="text-3xl font-bold lg:text-4xl">Expert healthcare with clinical discipline</h2>
+            <p className="mt-5 text-muted-foreground leading-relaxed">
+              Your trusted NABL accredited healthcare partner in Balasore, <strong>{CLINIC.name}</strong> offers
+              a comprehensive range of diagnostic tests, advanced medical services, and expert consultations to
+              support your well-being.
             </p>
-            <p className="mt-4 text-muted-foreground">
-              Our consultants practise across nine specialities and are supported by trained nursing staff,
-              technicians and front-desk coordinators who keep your records, reminders and follow-ups in order.
+            <p className="mt-4 text-muted-foreground leading-relaxed">
+              Families across Balasore and northern Odisha no longer need to undertake stressful travel to metro
+              cities for dependable specialist opinions, advanced CT scans, 2D echocardiography, or accurate
+              pathology investigations.
             </p>
-            <Button asChild className="mt-8">
-              <Link to="/doctors">Meet our doctors</Link>
-            </Button>
+            <div className="mt-8 flex flex-wrap gap-3">
+              <Button asChild>
+                <Link to="/doctors">Find a doctor</Link>
+              </Button>
+              <Button asChild variant="outline">
+                <Link to="/health-checkups">View health packages</Link>
+              </Button>
+            </div>
           </Reveal>
           <Reveal delay={120}>
             <img
               src={heroImg}
-              alt="Interior of Apollo Clinic Balasore"
+              alt="Interior of Apollo Clinic Balasore at Sanjay Heights"
               loading="lazy"
               width={1600}
               height={1104}
@@ -72,6 +109,7 @@ function AboutPage() {
         </div>
       </section>
 
+      {/* Stats band */}
       <section className="bg-brand-gradient text-primary-foreground">
         <div className="container-x grid gap-8 py-14 sm:grid-cols-2 lg:grid-cols-4">
           {STATS.map((s, i) => (
@@ -83,22 +121,23 @@ function AboutPage() {
         </div>
       </section>
 
+      {/* 4 Pillars Section */}
       <section className="section bg-surface">
         <div className="container-x">
           <Reveal className="max-w-2xl">
-            <p className="text-primary text-xs font-semibold tracking-[0.28em] uppercase">What guides us</p>
-            <h2 className="mt-3 text-3xl font-bold lg:text-4xl">Four commitments we do not compromise on</h2>
+            <p className="text-primary text-xs font-semibold tracking-[0.28em] uppercase">Our Approach</p>
+            <h2 className="mt-3 text-3xl font-bold lg:text-4xl">Four pillars of patient care</h2>
           </Reveal>
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {VALUES.map((v, i) => (
+            {PILLARS.map((v, i) => (
               <Reveal key={v.title} delay={i * 90}>
-                <Card className="hover-lift h-full">
+                <Card className="hover-lift h-full border-border/70">
                   <CardContent className="p-6">
                     <span className="bg-secondary text-primary grid size-11 place-items-center rounded-xl">
                       <v.icon className="size-5" />
                     </span>
-                    <h3 className="mt-4 font-semibold">{v.title}</h3>
-                    <p className="mt-2 text-sm text-muted-foreground">{v.text}</p>
+                    <h3 className="mt-4 font-semibold text-base">{v.title}</h3>
+                    <p className="mt-2 text-xs text-muted-foreground leading-relaxed">{v.text}</p>
                   </CardContent>
                 </Card>
               </Reveal>
@@ -107,26 +146,36 @@ function AboutPage() {
         </div>
       </section>
 
+      {/* Facilities checklist */}
       <section className="section">
         <div className="container-x">
           <Reveal className="max-w-2xl">
-            <p className="text-primary text-xs font-semibold tracking-[0.28em] uppercase">Facilities</p>
-            <h2 className="mt-3 text-3xl font-bold lg:text-4xl">Everything you need, on one floor</h2>
+            <p className="text-primary text-xs font-semibold tracking-[0.28em] uppercase">Infrastructure</p>
+            <h2 className="mt-3 text-3xl font-bold lg:text-4xl">Comprehensive facilities in Balasore</h2>
           </Reveal>
           <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {[
-              "Six air-conditioned consultation rooms",
-              "In-house pathology laboratory",
-              "Digital X-ray and ultrasound",
-              "Sterilised dental operatory",
-              "Minor procedure & dressing room",
-              "Pharmacy open all days",
-              "Physiotherapy suite",
-              "Wheelchair-accessible entrance",
-              "Cashless corporate tie-ups",
+              "Specialist consultation chambers",
+              "NABL accredited pathology laboratory",
+              "Whole-body CT Scan suite",
+              "Digital X-Ray & Ultrasound rooms",
+              "Mammography facility",
+              "Cardiac suite: 2D Echo, TMT, Holter & ECG",
+              "Neuro diagnostic suite: EEG, EMG, NCS & NCV",
+              "Pulmonary Function Test (PFT)",
+              "Endoscopy & Colonoscopy unit",
+              "Sterilized dental care clinic",
+              "Physiotherapy & rehabilitation area",
+              "Audiology & speech therapy center",
+              "In-house pharmacy open all 7 days",
+              "Free home sample collection service",
+              "Accessible 2nd floor with lift at Sanjay Heights",
             ].map((f, i) => (
-              <Reveal key={f} delay={(i % 3) * 80}>
-                <div className="rounded-xl border bg-card p-5 text-sm font-medium">{f}</div>
+              <Reveal key={f} delay={(i % 3) * 60}>
+                <div className="flex items-center gap-3 rounded-xl border bg-card p-4 text-xs font-medium shadow-soft">
+                  <CheckCircle2 className="text-primary size-4 shrink-0" />
+                  <span>{f}</span>
+                </div>
               </Reveal>
             ))}
           </div>

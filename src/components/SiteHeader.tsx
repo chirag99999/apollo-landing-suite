@@ -34,7 +34,7 @@ export function SiteHeader() {
               <MapPin className="size-3.5" /> {CLINIC.address}
             </span>
             <span className="inline-flex items-center gap-2">
-              <Clock className="size-3.5" /> Mon–Sat 8:00 AM – 8:30 PM
+              <Clock className="size-3.5" /> Mon–Sun 9:00 AM – 8:00 PM
             </span>
           </div>
           <a href={CLINIC.phoneHref} className="inline-flex items-center gap-2 font-semibold hover:underline">
