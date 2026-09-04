@@ -35,7 +35,7 @@ function ServicesPage() {
       <PageHero
         eyebrow="Clinical Care & Diagnostics"
         title="Comprehensive Healthcare Services Under One Roof"
-        description="Healthcare services designed to support your needs from specialist consultation and advanced diagnostics to preventive care and rehabilitation."
+        description="Healthcare services designed to support your needs from specialist consultation and advanced diagnostics to preventive care and pain management."
       >
         <div className="flex flex-wrap gap-3 mt-4">
           <Button asChild size="lg" variant="secondary">

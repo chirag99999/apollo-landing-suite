@@ -156,19 +156,21 @@ function AboutPage() {
           <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {[
               "Specialist consultation chambers",
-              "NABL accredited pathology laboratory",
+              "NABL accredited pathology laboratory (2,800+ tests)",
+              "Cancer markers & complete hormone testing",
               "Whole-body CT Scan suite",
-              "Digital X-Ray & Ultrasound rooms",
-              "Mammography facility",
+              "Digital X-Ray (In-Clinic & Home X-Ray)",
+              "High-resolution Ultrasound & Mammography",
+              "FibroScan for liver health assessment",
               "Cardiac suite: 2D Echo, TMT, Holter & ECG",
               "Neuro diagnostic suite: EEG, EMG, NCS & NCV",
               "Pulmonary Function Test (PFT)",
-              "Endoscopy & Colonoscopy unit",
+              "Upper GI Endoscopy & Colonoscopy unit",
               "Sterilized dental care clinic",
-              "Physiotherapy & rehabilitation area",
+              "Physiotherapy & joint pain management",
               "Audiology & speech therapy center",
               "In-house pharmacy open all 7 days",
-              "Free home sample collection service",
+              "Home sample pickup & Home X-Ray across Balasore",
               "Accessible 2nd floor with lift at Sanjay Heights",
             ].map((f, i) => (
               <Reveal key={f} delay={(i % 3) * 60}>

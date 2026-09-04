@@ -259,7 +259,7 @@ function Home() {
               <p className="text-primary text-xs font-semibold tracking-[0.28em] uppercase">Specialities & Care</p>
               <h2 className="mt-3 text-3xl font-bold lg:text-4xl">Complete healthcare under one roof</h2>
               <p className="mt-4 text-muted-foreground">
-                From daily consultations to cardiac care, women’s wellness, dental, and rehabilitation —
+                From daily consultations to cardiac care, women’s wellness, dental, and physiotherapy —
                 access integrated healthcare without traveling between different clinics.
               </p>
             </div>
@@ -314,23 +314,24 @@ function Home() {
             <p className="text-primary text-xs font-semibold tracking-[0.28em] uppercase">Diagnostics</p>
             <h2 className="mt-3 text-3xl font-bold lg:text-4xl">Advanced diagnostics. Reliable results.</h2>
             <p className="mt-4 text-muted-foreground">
-              At Apollo Clinic Balasore, our NABL Accredited Laboratory and advanced imaging suite deliver
-              precise diagnostic evaluations for actionable clinical decisions.
+              At Apollo Clinic Balasore, our NABL Accredited Laboratory (with 2,800+ pathology tests, cancer markers
+              and hormone panels) and advanced imaging suite deliver precise diagnostic evaluations for actionable clinical decisions.
             </p>
             <div className="mt-6 flex flex-wrap gap-2">
               {[
+                "2,800+ Pathology Tests",
+                "Cancer & Hormone Markers",
+                "FibroScan",
                 "CT Scan (Whole Body)",
                 "Ultrasound",
-                "Digital X-Ray",
+                "Digital X-Ray & Home X-Ray",
                 "Mammography",
                 "2D Echo",
                 "TMT",
                 "PFT",
                 "ECG",
                 "EEG & EMG",
-                "NCS & NCV",
-                "Endoscopy",
-                "Colonoscopy",
+                "Endoscopy & Colonoscopy",
               ].map((test) => (
                 <Badge key={test} variant="secondary" className="px-3 py-1.5 text-xs font-medium">
                   {test}

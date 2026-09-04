@@ -45,15 +45,15 @@ export const SERVICES: Service[] = [
     slug: "diagnostics",
     title: "NABL Accredited Laboratory",
     icon: "FlaskConical",
-    summary: "Comprehensive clinical biochemistry, haematology, pathology and culture tests with accurate reporting.",
-    points: ["Automated NABL lab testing", "Thyroid & hormone profiles", "Same-day digital reports on WhatsApp"],
+    summary: "Comprehensive laboratory testing with more than 2,800+ pathology tests, cancer markers and complete hormone profiles.",
+    points: ["2,800+ pathology & diagnostic tests", "Cancer markers & complete hormone panels", "Same-day digital reports on WhatsApp"],
   },
   {
     slug: "imaging-radiology",
     title: "Imaging & Radiology",
     icon: "TestTubes",
-    summary: "Whole-body imaging including CT scan, high-resolution ultrasound, and low-radiation digital X-ray.",
-    points: ["CT Scan (Whole Body)", "Ultrasound & Mammography", "Digital X-Ray with specialist reporting"],
+    summary: "Whole-body imaging including CT scan, high-resolution ultrasound, and clinic & Home X-Ray service.",
+    points: ["CT Scan (Whole Body)", "Ultrasound & Mammography", "Digital X-Ray & Home X-Ray Service"],
   },
   {
     slug: "cardiac-diagnostics",
@@ -80,8 +80,8 @@ export const SERVICES: Service[] = [
     slug: "endoscopy",
     title: "Specialized Diagnostics",
     icon: "Sparkles",
-    summary: "Advanced diagnostic screenings under expert gastroenterology and ophthalmology care.",
-    points: ["Endoscopy & Colonoscopy", "Fundoscopy & Retina screening", "Podia Scan, VPT, ABI & Uroflowmetry"],
+    summary: "Advanced diagnostic screenings under expert gastroenterology, hepatology and ophthalmology care.",
+    points: ["Endoscopy & Colonoscopy", "FibroScan (Liver Assessment)", "Fundoscopy, VPT & Uroflowmetry"],
   },
   {
     slug: "dental",
@@ -92,10 +92,10 @@ export const SERVICES: Service[] = [
   },
   {
     slug: "physiotherapy",
-    title: "Physiotherapy & Rehab",
+    title: "Physiotherapy",
     icon: "Bone",
-    summary: "Targeted physical therapy for joint, spine, sports injuries, and post-surgical rehabilitation.",
-    points: ["Pain management & mobilization", "Post-fracture rehabilitation", "Ergonomic & postural guidance"],
+    summary: "Targeted outpatient physical therapy for joint, spine, and sports injury care.",
+    points: ["Pain management & joint mobilization", "Outpatient physical therapy", "Ergonomic & postural guidance"],
   },
   {
     slug: "diabetes-care",
@@ -113,10 +113,10 @@ export const SERVICES: Service[] = [
   },
   {
     slug: "home-care",
-    title: "Home Sample Collection",
+    title: "Home Sample Collection & Home X-Ray",
     icon: "Truck",
-    summary: "Hassle-free blood and pathology sample collection from the comfort of your home.",
-    points: ["Home sample pickup across Balasore", "Hygenic sterile collection kits", "Digital reports sent via WhatsApp & Email"],
+    summary: "Hassle-free blood sample pickup and portable digital Home X-Ray service across Balasore.",
+    points: ["Free blood sample pickup across Balasore", "Portable Home X-Ray for elderly & bedridden patients", "Digital reports sent via WhatsApp & Email"],
   },
 ];
 
@@ -131,7 +131,7 @@ export const DIAGNOSTICS_DATA: DiagnosticCategory[] = [
     tests: [
       "CT Scan (Whole Body)",
       "Ultrasound (USG Whole Abdomen / Pelvis)",
-      "Digital X-Ray",
+      "Digital X-Ray (In-Clinic & Home X-Ray Service)",
       "Mammography (Both Breasts)",
       "2D Echo",
       "Colour Doppler Study",
@@ -161,8 +161,11 @@ export const DIAGNOSTICS_DATA: DiagnosticCategory[] = [
     tests: ["PFT (Pulmonary Function Test)"],
   },
   {
-    category: "NABL Laboratory & Pathology",
+    category: "NABL Laboratory & Pathology (2,800+ Tests Possible)",
     tests: [
+      "2,800+ Pathology & Diagnostic Tests Possible",
+      "Cancer Markers (PSA, CA-125, CEA, AFP, CA 19-9)",
+      "Hormone Markers (Thyroid, Fertility, AMH, Testosterone, Estrogen, Prolactin, Cortisol)",
       "Clinical Haematology (CBC, ESR, HPLC)",
       "Clinical Biochemistry (Lipid, LFT, KFT, Electrolytes)",
       "Thyroid Testing (T3, T4, TSH)",
@@ -176,12 +179,11 @@ export const DIAGNOSTICS_DATA: DiagnosticCategory[] = [
   {
     category: "Specialized Diagnostics",
     tests: [
+      "FibroScan (Liver Fibrosis & Fatty Liver Assessment)",
       "Upper GI Endoscopy",
       "Colonoscopy",
       "Fundoscopy / Retina Screening",
-      "Podia Scan",
       "VPT (Vibration Perception Test)",
-      "ABI (Ankle Brachial Index)",
       "Uroflowmetry",
     ],
   },
@@ -986,7 +988,7 @@ export const PROHEALTH_PACKAGES = [
 export const STATS = [
   { value: "50+", label: "Specialists on panel" },
   { value: "NABL", label: "Accredited Laboratory" },
-  { value: "1,200+", label: "Diagnostic tests" },
+  { value: "2,800+", label: "Diagnostic & Pathology tests" },
   { value: "7 Days", label: "Open 9:00 AM – 8:00 PM" },
 ];
 

@@ -59,9 +59,13 @@ Powered By:    Manorama Communication
 4. **Home Sample Pickup:** Free sample pickup across Balasore town for preventive health checkup packages.
 
 ### Advanced Diagnostics
+- 2,800+ Pathology & Diagnostic Tests Possible
+- Cancer Markers (PSA, CA-125, CEA, AFP, CA 19-9)
+- Complete Hormone Markers (Thyroid, Fertility, AMH, Testosterone, Estrogen)
+- FibroScan (Liver Fibrosis & Fatty Liver Assessment)
 - CT Scan (Whole Body)
 - Ultrasound (USG Abdomen / Pelvis)
-- Digital X-Ray
+- Digital X-Ray & Home X-Ray Service
 - Mammography (Both Breasts)
 - 2D Echocardiography
 - Treadmill Test (TMT)
@@ -76,17 +80,17 @@ Powered By:    Manorama Communication
 ## 🩺 Clinical Services & Diagnostic Divisions
 
 1. **Specialist Consultations:** Consultations across 26+ medical specialties with visiting and resident doctors.
-2. **NABL Accredited Laboratory:** Comprehensive clinical biochemistry, haematology, pathology and culture tests with accurate reporting.
-3. **Imaging & Radiology:** Whole-body imaging including CT scan, high-resolution ultrasound, and low-radiation digital X-ray.
+2. **NABL Accredited Laboratory (2,800+ Tests):** Over 2,800+ diagnostic tests, cancer markers (PSA, CA-125, CEA, AFP) and complete hormone panels.
+3. **Imaging & Radiology:** Whole-body imaging including CT scan, high-resolution ultrasound, digital X-ray, and Home X-Ray service.
 4. **Cardiac Diagnostics:** Advanced non-invasive cardiac evaluation supervised by expert cardiologists (2D Echo, TMT, Holter, ECG).
 5. **Neurological & Pulmonary Tests:** Specialized neuro-electrophysiology and respiratory diagnostic evaluations (EEG, EMG, NCS/NCV, PFT).
 6. **Preventive Health Packages:** Customized health screening profiles designed for different age groups, lifestyles, and risk factors.
-7. **Specialized Diagnostics:** Endoscopy, Colonoscopy, Fundoscopy / Retina screening, Podia Scan, VPT, ABI & Uroflowmetry.
+7. **Specialized Diagnostics:** Upper GI Endoscopy, Colonoscopy, FibroScan (Liver Assessment), Fundoscopy, VPT & Uroflowmetry.
 8. **Dental Care:** Preventive, restorative, and cosmetic dentistry in a fully sterilized operatory.
-9. **Physiotherapy & Rehab:** Targeted physical therapy for joint, spine, sports injuries, and post-surgical rehabilitation.
+9. **Physiotherapy:** Targeted outpatient physical therapy for joint, spine, and sports injury care.
 10. **Diabetes Care:** Comprehensive assessment, HbA1c testing, diabetic foot screening, and diet management.
 11. **Audiology & Speech:** Professional hearing evaluations, audiograms, and speech-language therapy.
-12. **Home Sample Collection:** Hassle-free blood and pathology sample collection across Balasore town.
+12. **Home Sample Collection & Home X-Ray:** Hassle-free blood sample pickup and portable digital Home X-Ray across Balasore.
 
 ---
 
