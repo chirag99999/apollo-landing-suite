@@ -1,7 +1,8 @@
 import { Link } from "@tanstack/react-router";
 import { Phone, Mail, MapPin, MessageCircle } from "lucide-react";
 import { CLINIC, NAV, SERVICES } from "@/lib/site-data";
-import logo from "@/assets/logo.webp.asset.json";
+
+const LOGO_URL = "/apollo-clinic-balasore-logo.webp";
 
 export function SiteFooter() {
   return (
@@ -9,7 +10,7 @@ export function SiteFooter() {
       <div className="container-x grid gap-10 py-14 md:grid-cols-2 lg:grid-cols-4">
         <div>
           <div className="inline-flex rounded-lg bg-background p-3">
-            <img src={logo.url} alt={`${CLINIC.name} logo`} width={168} height={76} className="h-11 w-auto" />
+            <img src={LOGO_URL} alt={`${CLINIC.name} logo`} width={168} height={76} className="h-11 w-auto" />
           </div>
           <p className="mt-4 max-w-xs text-sm opacity-80">
             A multi-speciality clinic bringing trusted Apollo standards of care to families across Balasore.

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import logo from "@/assets/logo.webp.asset.json";
+
+const LOGO_URL = "/apollo-clinic-balasore-logo.webp";
 
 export function Preloader() {
   const [mounted, setMounted] = useState(false);
@@ -35,7 +36,7 @@ export function Preloader() {
       <div className="relative flex items-center justify-center">
         <span className="pulse-ring absolute h-28 w-28 rounded-full bg-primary/15" />
         <img
-          src={logo.url}
+          src={LOGO_URL}
           alt=""
           width={200}
           height={90}
