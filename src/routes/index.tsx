@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import {
   Activity,
@@ -10,14 +11,17 @@ import {
   FlaskConical,
   HeartPulse,
   MapPin,
+  MessageCircle,
   Phone,
   Search,
   ShieldCheck,
+  Sparkles,
   Star,
   Stethoscope,
   TestTubes,
   Truck,
   UserCheck,
+  Zap,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -118,6 +122,24 @@ const HIGHLIGHTS = [
 ];
 
 function Home() {
+  const [activeCategory, setActiveCategory] = useState<"all" | "diagnostics" | "specialists" | "care" | "home">("all");
+
+  const filteredServices = SERVICES.filter((s) => {
+    if (activeCategory === "all") return true;
+    if (activeCategory === "diagnostics") {
+      return ["diagnostics", "imaging-radiology", "cardiac-diagnostics", "neuro-diagnostics", "endoscopy"].includes(s.slug);
+    }
+    if (activeCategory === "specialists") {
+      return ["consultations", "health-packages", "diabetes-care"].includes(s.slug);
+    }
+    if (activeCategory === "care") {
+      return ["dental", "physiotherapy", "audiology"].includes(s.slug);
+    }
+    if (activeCategory === "home") {
+      return ["home-care"].includes(s.slug);
+    }
+    return true;
+  });
   return (
     <>
       {/* Hero */}
@@ -168,7 +190,7 @@ function Home() {
           </Reveal>
 
           <Reveal delay={120} className="relative">
-            <div className="shadow-lift relative overflow-hidden rounded-3xl">
+            <div className="shadow-lift relative overflow-hidden rounded-3xl border border-white/60">
               <img
                 src={heroImg}
                 alt="Apollo Clinic Balasore - Expert care and advanced diagnostics"
@@ -177,20 +199,80 @@ function Home() {
                 className="h-full w-full object-cover"
               />
             </div>
-            <div className="animate-float shadow-soft absolute -bottom-6 -left-2 hidden rounded-2xl border bg-card p-4 sm:block">
-              <div className="flex items-center gap-3">
-                <span className="bg-primary/10 text-primary grid size-10 place-items-center rounded-xl">
-                  <Clock3 className="size-5" />
+
+            {/* Interactive Free Dental Floating Badge */}
+            <button
+              onClick={() => window.dispatchEvent(new CustomEvent("open-dental-promo"))}
+              className="glass-panel absolute -top-4 -right-2 sm:-right-4 p-3 rounded-2xl shadow-lift border border-amber-300 text-left hover:scale-105 transition-all cursor-pointer animate-bounce-gentle group z-10"
+              title="Click to claim 100% Free Dental Checkup"
+            >
+              <div className="flex items-center gap-2.5">
+                <span className="size-9 rounded-xl bg-amber-500 text-white grid place-items-center shadow-md group-hover:rotate-12 transition-transform">
+                  <Sparkles className="size-5" />
                 </span>
                 <div>
-                  <p className="text-sm font-semibold">NABL Accredited Lab</p>
-                  <p className="text-xs text-muted-foreground">Reports within 6–8 hours on WhatsApp</p>
+                  <div className="flex items-center gap-1.5">
+                    <span className="text-xs font-bold text-slate-900">FREE Dental Checkup</span>
+                    <span className="text-[10px] bg-amber-200 text-amber-900 px-1.5 py-0.5 rounded-full font-extrabold">₹0</span>
+                  </div>
+                  <p className="text-[10px] text-muted-foreground">Click to Claim • No Hidden Fee</p>
                 </div>
+              </div>
+            </button>
+
+            {/* Front Desk Live Pulse Card */}
+            <div className="animate-float-gentle shadow-soft absolute -bottom-5 -left-2 sm:-left-4 hidden rounded-2xl border bg-card/95 backdrop-blur-md p-3.5 sm:block ring-1 ring-primary/20 z-10">
+              <div className="flex items-center gap-3">
+                <span className="relative flex size-3">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                  <span className="relative inline-flex rounded-full size-3 bg-emerald-500"></span>
+                </span>
+                <div>
+                  <p className="text-xs font-bold text-slate-900">Front Desk Live • 1-Tap Booking</p>
+                  <p className="text-[10px] text-muted-foreground">1 Missed Call or WhatsApp to Book</p>
+                </div>
+                <a
+                  href="https://wa.me/919439454650?text=Hi%2C%20I%20want%20to%20book%20an%20appointment%20at%20Apollo%20Clinic%20Balasore"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="ml-1 px-3 py-1.5 rounded-full bg-emerald-600 text-white text-xs font-bold hover:bg-emerald-700 flex items-center gap-1 shadow-sm transition-transform hover:scale-105"
+                >
+                  <MessageCircle className="size-3.5 fill-current" /> Chat
+                </a>
               </div>
             </div>
           </Reveal>
         </div>
       </section>
+
+      {/* Interactive Infinite Loop Marquee Ticker */}
+      <div className="overflow-hidden border-y border-teal-700/40 bg-gradient-to-r from-teal-950 via-primary-deep to-teal-900 py-3 text-white shadow-inner">
+        <div className="animate-marquee whitespace-nowrap flex items-center gap-8 text-xs sm:text-sm font-medium">
+          {[
+            "🎉 100% Completely FREE Dental Checkup — No Hidden Charges (Click to Claim)",
+            "🟢 50+ Specialists On Panel: Cardiology, Neurology, Gynaecology, Ortho & more",
+            "🔬 NABL Accredited Laboratory: Over 2,800+ Pathology Tests • Cancer & Hormone Markers",
+            "🚑 Portable Home X-Ray & Free Blood Sample Pickup Across Balasore",
+            "⚡ 1-Tap Instant Booking: Give a Missed Call or WhatsApp to +91-9439454650",
+            "🏥 Open 7 Days: Monday – Sunday 9:00 AM – 8:00 PM at 2nd Floor, Sanjay Heights",
+            "🎉 100% Completely FREE Dental Checkup — No Hidden Charges (Click to Claim)",
+            "🟢 50+ Specialists On Panel: Cardiology, Neurology, Gynaecology, Ortho & more",
+            "🔬 NABL Accredited Laboratory: Over 2,800+ Pathology Tests • Cancer & Hormone Markers",
+            "🚑 Portable Home X-Ray & Free Blood Sample Pickup Across Balasore",
+            "⚡ 1-Tap Instant Booking: Give a Missed Call or WhatsApp to +91-9439454650",
+            "🏥 Open 7 Days: Monday – Sunday 9:00 AM – 8:00 PM at 2nd Floor, Sanjay Heights",
+          ].map((text, i) => (
+            <button
+              key={i}
+              onClick={() => text.includes("FREE Dental") && window.dispatchEvent(new CustomEvent("open-dental-promo"))}
+              className="inline-flex items-center gap-2 hover:text-amber-300 transition-colors cursor-pointer shrink-0"
+            >
+              <span>{text}</span>
+              <span className="text-amber-400 font-bold">•</span>
+            </button>
+          ))}
+        </div>
+      </div>
 
       {/* Patient Intent Section - "How Can We Help You Today?" */}
       <section className="border-y bg-background py-12">
@@ -270,15 +352,55 @@ function Home() {
             </Button>
           </Reveal>
 
-          <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-            {SERVICES.slice(0, 6).map((s, i) => (
-              <Reveal key={s.slug} delay={(i % 3) * 90}>
-                <Card className="hover-lift h-full border-border/70">
+          {/* Interactive Category Filter Pills */}
+          <div className="mt-8 flex flex-wrap items-center gap-2">
+            {[
+              { id: "all", label: "All Services" },
+              { id: "diagnostics", label: "Diagnostics & Lab (2800+ Tests)" },
+              { id: "specialists", label: "Doctor Consultations" },
+              { id: "care", label: "Dental & Therapy" },
+              { id: "home", label: "Home X-Ray & Pickup" },
+            ].map((tab) => (
+              <button
+                key={tab.id}
+                onClick={() => setActiveCategory(tab.id as any)}
+                className={`px-4 py-2 rounded-full text-xs sm:text-sm font-semibold transition-all duration-200 cursor-pointer ${
+                  activeCategory === tab.id
+                    ? "bg-primary text-primary-foreground shadow-md scale-105"
+                    : "bg-surface hover:bg-surface-elevated text-muted-foreground hover:text-foreground border border-border/80"
+                }`}
+              >
+                {tab.label}
+              </button>
+            ))}
+          </div>
+
+          <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {filteredServices.map((s, i) => (
+              <Reveal key={s.slug} delay={(i % 3) * 60}>
+                <Card className="hover-lift h-full border-border/70 group hover:border-primary/40 transition-all duration-300">
                   <CardContent className="p-6">
-                    <span className="bg-brand-gradient text-primary-foreground grid size-12 place-items-center rounded-2xl">
-                      <ServiceIcon name={s.icon} className="size-5" />
-                    </span>
-                    <h3 className="mt-5 text-lg font-semibold">{s.title}</h3>
+                    <div className="flex items-center justify-between">
+                      <span className="bg-brand-gradient text-primary-foreground grid size-12 place-items-center rounded-2xl group-hover:scale-110 transition-transform">
+                        <ServiceIcon name={s.icon} className="size-5" />
+                      </span>
+                      {s.slug === "dental" && (
+                        <span className="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded-full bg-amber-100 text-amber-900 border border-amber-300 animate-pulse">
+                          Free Checkup Available
+                        </span>
+                      )}
+                      {s.slug === "diagnostics" && (
+                        <span className="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-900 border border-emerald-300">
+                          2,800+ Tests
+                        </span>
+                      )}
+                      {s.slug === "home-care" && (
+                        <span className="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded-full bg-blue-100 text-blue-900 border border-blue-300">
+                          Home Service
+                        </span>
+                      )}
+                    </div>
+                    <h3 className="mt-5 text-lg font-semibold group-hover:text-primary transition-colors">{s.title}</h3>
                     <p className="mt-2 text-sm text-muted-foreground">{s.summary}</p>
                     <ul className="mt-4 space-y-1.5 text-xs text-muted-foreground">
                       {s.points.map((p) => (

@@ -15,6 +15,8 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { Preloader } from "@/components/Preloader";
 import { Toaster } from "@/components/ui/sonner";
+import { DentalPromoModal } from "@/components/DentalPromoModal";
+import { QuickAppointmentWidget } from "@/components/QuickAppointmentWidget";
 
 function NotFoundComponent() {
   return (
@@ -136,6 +138,8 @@ function RootComponent() {
         </main>
         <SiteFooter />
       </div>
+      <DentalPromoModal />
+      <QuickAppointmentWidget />
       <Toaster position="top-center" richColors />
     </QueryClientProvider>
   );
